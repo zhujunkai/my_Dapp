@@ -2,15 +2,21 @@ body {
     background-color: azure;
 }
 .row {
-    background-color: dimgray;
+    background-color:rgb(25, 61, 61);
     text-align: center;
 }
 .text-center {
-    color: azure;
-    font-size: 35px;
+    color: rgb(255, 166, 166);
+    font: bold;
+    font-size: 50px;
 }
 .t_title{
     padding-top: 30px;
+}
+.Add{
+    position: relative;
+    width: 29%;
+    float: left;
 }
 .Add, #no_search_show , .Change{
     text-align: center;
@@ -32,7 +38,7 @@ body {
 	height: 40px; /* 高度 */
 	border-width: 0px; /* 边框宽度 */
 	border-radius: 3px; /* 边框半径 */
-	background: dimgray; /* 背景颜色 */
+	background: rgb(129, 207, 231); /* 背景颜色 */
 	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
 	outline: none; /* 不显示轮廓线 */
 	font-family: Microsoft YaHei; /* 设置字体 */
@@ -44,7 +50,7 @@ body {
 
 #submit-goods-info:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background: rgb(38, 42, 48);
+    background: rgb(55, 0, 255);
 }
 
 input{
@@ -59,12 +65,15 @@ input:focus{
     border-bottom: 2px solid blue;
 }
 
-
-.parent {
-    position: relative;
+.b_parent{
     width: 100%;
     height: 60px;
     text-align: left;
+}
+.parent {
+    position: relative;
+    width: 65%;
+    float:right;
 }
 
 #search_input {
@@ -73,7 +82,7 @@ input:focus{
     border-radius: 18px;
     border: 1px solid #ccc;
     padding-left: 20px;
-    margin-left: 20%;
+    margin-left: 5%;
     margin-top: 10px;
 }
 
@@ -85,25 +94,27 @@ input:focus{
     width: 10%;
     height: 50px;
     font-size: 2px;
-    border-radius: 4px;
-    background-color: dimgray;
+    border-radius: 10px;
+    background-color: rgb(129, 207, 231);
     cursor: pointer;
     outline: none; /* 不显示轮廓线 */
 	font-family: Microsoft YaHei; /* 设置字体 */
 	color: white; /* 字体颜色 */
     font-size: 17px; /* 字体大小 */
     margin-bottom: 20px;
+    margin-left: 10px;
     border: 1px solid #d5d5d5;
 }
 
 #search_button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background: rgb(38, 42, 48);
+    background: rgb(6, 100, 241);
 }
 
 #reset_button {
     position: absolute;
-    background-image:url("刷新.png");
+    background-image:url("reset.png");
+    background-size: cover;
     background-color: azure;
     width: 50px;
     height: 50px;
@@ -114,17 +125,52 @@ input:focus{
 }
 
 #reset_button:hover {
-    box-shadow: 0 12px 16px 0 rgb(179, 225, 252), 0 17px 50px 0 rgb(188, 221, 248);
+    box-shadow: 0 12px 16px 0 rgb(199, 212, 221), 0 17px 50px 0 rgb(199, 222, 241);
 }
-
+#reset_button:focus{
+    outline-color: #ccc ;
+}
 #no_result {
     font-size: 25px;
     color: red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #petTemplate {
-    display: none;
+    width: 150px;
+    height: 200px;
+    font-size: 2px;
+    margin: 30px 30px 30px 30px;
+    padding: 10px;
+    border:2px solid rgb(114, 159, 255);
+    background: rgb(176, 236, 255);
+    border-radius:25px;
+    display: block;
+    float: left;
 }
 #img-style{
     width: 100%;
+}
+.button_l{
+    width: 45px;
+    padding: 5px;
+    border-radius:10px;
+    float: left;
+    margin: 0px 0px 0px 20px;
+    background-color: rgb(79, 211, 252)
+}
+.button_l:hover {
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 6px 15px 0 rgba(0,0,0,0.19);
+    background: rgb(7, 226, 255);
+}
+.button_r{
+    width: 45px;
+    padding: 5px;
+    border-radius:10px;
+    float: right;
+    margin: 0px 20px 0px 0px;
+    background-color: rgb(79, 211, 252)
+}
+.button_r:hover {
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 6px 15px 0 rgba(0,0,0,0.19);
+    background: rgb(7, 226, 255);
 }
