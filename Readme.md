@@ -9,7 +9,7 @@
     * 首先在Demo2的目录下： truffle develop  打开测试环境</br>
     * 接着 complie 和 migrate --reset ，把合约部署上去</br>
     * 使用那个狐狸连接到测试环境，并创建一个测试账号</br>
- ![](media/15474410868096.jpg)
+ ![](./media/15474410868096.jpg)
     * 在client目录下，开启前端： npm run dev </br>
     * 基本上就可以使用了</br>
 
